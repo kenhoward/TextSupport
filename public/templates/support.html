@@ -1,0 +1,18 @@
+<!-- {{test}} -->
+
+<div class="container">
+	<div class="col-sm-6">
+		<h3>Tickets</h3>
+			<div ng-repeat='number in numbers'>
+				<table class='table table-hover'>
+					<tr><h5>{{number.$id}}</h5></tr>
+						<div ng-repeat='(key, textObject) in number'>
+							<span>{{textObject.date_created}}<span><br>
+							<p>{{textObject.body}}</p>
+							<hr>
+						</div>
+				</table>		
+				<!-- <p>{{messages}}</p> -->
+			</div>
+	</div>
+</div>
